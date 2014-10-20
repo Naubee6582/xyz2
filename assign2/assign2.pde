@@ -218,11 +218,7 @@ void keyPressed() {
       }
     }
     if(enterPressed == true){
-      if((gameState == GAME_WIN)||(gameState == GAME_LOSE)){
-        if(key == ENTER){
-          gameState = GAME_START;
-        }
-      }else if(key == ENTER ){
+      if(key == ENTER ){
           gameState = GAME_RUN;
           life=3;
           frogX = frogInitX;
