@@ -131,32 +131,32 @@ void draw(){
          float frogCY = frogY+frogH/2;
          
          // car1 hitTest
-         if (leftCar1X < frogCX && frogCX < leftCar1X+32 && 
-             leftCar1Y < frogCY && frogCY < leftCar1Y+32){
+         if (leftCar1X =< frogCX && frogCX =< leftCar1X+32 && 
+             leftCar1Y =< frogCY && frogCY =< leftCar1Y+32){
             currentTime = millis();
             image(imgDeadFrog, frogX, frogY);
             life = life - 1;
             gameState = FROG_DIE;
          }
          // car2 hitTest
-         if (leftCar2X < frogCX && frogCX < leftCar2X+32 && 
-             leftCar2Y < frogCY && frogCY < leftCar2Y+32){
+         if (leftCar2X =< frogCX && frogCX =< leftCar2X+32 && 
+             leftCar2Y =< frogCY && frogCY =< leftCar2Y+32){
             currentTime = millis();
             image(imgDeadFrog, frogX, frogY);
             life = life - 1;
             gameState = FROG_DIE;
          }
          // car3 hitTest
-         if (rightCar1X < frogCX && frogCX < rightCar1X+32 && 
-             rightCar1Y < frogCY && frogCY < rightCar1Y+32){
+         if (rightCar1X =< frogCX && frogCX =< rightCar1X+32 && 
+             rightCar1Y =< frogCY && frogCY =< rightCar1Y+32){
             currentTime = millis();
             image(imgDeadFrog, frogX, frogY);
             life = life - 1;
             gameState = FROG_DIE;
          }
          // car4 hitTest
-          if (rightCar2X < frogCX && frogCX < rightCar2X+32 && 
-             rightCar2Y < frogCY && frogCY < rightCar2Y+32){
+          if (rightCar2X =< frogCX && frogCX =< rightCar2X+32 && 
+             rightCar2Y =< frogCY && frogCY =< rightCar2Y+32){
             currentTime = millis();
             image(imgDeadFrog, frogX, frogY);
             life = life - 1;
